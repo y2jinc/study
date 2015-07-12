@@ -51,6 +51,7 @@ int main()
 		ReadFile(hFile, buf, 4096, &len, 0);
 
 		printf("%s", buf);
+		MessageBox(NULL, buf, "a.txt", MB_OK);
 
 		CloseHandle(pi.hProcess);
 		CloseHandle(pi.hThread);
