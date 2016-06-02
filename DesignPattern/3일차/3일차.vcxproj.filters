@@ -45,6 +45,18 @@
     <ClCompile Include="SampleGraph.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="5_컨테이너.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5_컨테이너2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5_컨테이너3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5_컨테이너4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IGraph.h">
