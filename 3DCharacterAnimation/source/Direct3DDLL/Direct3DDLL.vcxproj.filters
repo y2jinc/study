@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6020bf55-99ef-420b-8b4e-a53ca71e42f5}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{38557d37-0cd4-457d-b916-82b190220524}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{1243f8ff-72cb-4619-be5f-6b5ecd772f79}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Header Files\d3d8">
+      <UniqueIdentifier>{5231251a-700a-4d50-9fd9-a62d0b340f31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Direct3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DTextureLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="d3d8.lib">
+      <Filter>Source Files</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DTextureLL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dx8.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BASETSD.H">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dx8effect.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dxerr.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dx8shape.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dxfile.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dx8core.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3d8caps.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dx8mesh.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dx8math.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3dx8tex.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3d8types.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+    <ClInclude Include="include\d3d8.h">
+      <Filter>Header Files\d3d8</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Render.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Direct3DDLL.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\d3dx8math.inl">
+      <Filter>Header Files\d3d8</Filter>
+    </None>
+  </ItemGroup>
+</Project>

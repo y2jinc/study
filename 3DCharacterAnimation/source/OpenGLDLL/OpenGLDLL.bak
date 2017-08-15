@@ -1,0 +1,9 @@
+LIBRARY OpenGLDLL.dll
+EXPORTS
+	API_CreateWindow
+	API_ReSizeWindow
+	API_DeleteWindow
+	API_BeginScene
+	API_RenderMesh
+	API_EndScene
+

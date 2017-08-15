@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OpenGLDLL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSPC345.TMP" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OPENGLDLL_EXPORTS" /Fp"Debug/OpenGLDLL.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\sourcecode\OpenGLDLL\OpenGL.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPC345.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPC346.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/OpenGLDLL.pdb" /debug /machine:I386 /def:".\OpenGLDLL.def" /out:"../Debug/OpenGLDLL.dll" /implib:"Debug/OpenGLDLL.lib" /pdbtype:sept 
+.\Debug\OpenGL.obj
+.\Debug\OpenGLDLL.obj
+.\Debug\OpenGLTextureLL.obj
+.\Debug\StdAfx.obj
+.\Opengl32.lib
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPC346.TMP"
+<h3>Output Window</h3>
+Compiling...
+OpenGL.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+OpenGLDLL.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

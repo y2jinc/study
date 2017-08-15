@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Render - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Render.res" /d "_DEBUG" "C:\SourceCode\Render.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPF371.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/Render.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\SourceCode\App.cpp"
+"C:\SourceCode\BoneH.cpp"
+"C:\SourceCode\Common.cpp"
+"C:\SourceCode\FieldLL.cpp"
+"C:\SourceCode\IconLL.cpp"
+"C:\SourceCode\KeyFrameLL.cpp"
+"C:\SourceCode\MeshLL.cpp"
+"C:\SourceCode\ObjectLL.cpp"
+"C:\SourceCode\RectLL.cpp"
+"C:\SourceCode\Render.cpp"
+"C:\SourceCode\SceneLL.cpp"
+"C:\SourceCode\Software.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPF371.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPF372.TMP" with contents
+[
+/nologo /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/Render.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\SourceCode\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSPF372.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSPF373.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Render.pdb" /debug /machine:I386 /out:"Debug/Render.exe" /pdbtype:sept 
+.\Debug\App.obj
+.\Debug\BoneH.obj
+.\Debug\Common.obj
+.\Debug\FieldLL.obj
+.\Debug\IconLL.obj
+.\Debug\KeyFrameLL.obj
+.\Debug\MeshLL.obj
+.\Debug\ObjectLL.obj
+.\Debug\RectLL.obj
+.\Debug\Render.obj
+.\Debug\SceneLL.obj
+.\Debug\Software.obj
+.\Debug\StdAfx.obj
+.\Debug\Render.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPF373.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+App.cpp
+BoneH.cpp
+Common.cpp
+FieldLL.cpp
+IconLL.cpp
+KeyFrameLL.cpp
+MeshLL.cpp
+ObjectLL.cpp
+RectLL.cpp
+Render.cpp
+SceneLL.cpp
+Software.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Render.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
