@@ -8,7 +8,7 @@
 //      Hold the right mouse button down to zoom in and out.
 //
 //***************************************************************************************
-
+#include <windows.h>
 #include "d3dApp.h"
 #include "GeometryGenerator.h"
 #include "MathHelper.h"
