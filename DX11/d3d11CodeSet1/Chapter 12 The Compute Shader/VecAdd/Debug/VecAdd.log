@@ -1,0 +1,18 @@
+﻿Build started 2019-11-28 오후 9:15:37.
+     1>Project "E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\VecAdd\VecAdd.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         fxc compile for debug: E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\VecAdd\FX\VecAdd.fx
+         Microsoft (R) Direct3D Shader Compiler 6.3.9600.16384
+         Copyright (C) 2013 Microsoft. All rights reserved.
+         
+     1>CUSTOMBUILD : warning X4717: Effects deprecated for D3DCompiler_47
+         
+         compilation code save succeeded; see VecAdd.cod
+         compilation object save succeeded; see E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\VecAdd\FX\VecAdd.fxo
+       Link:
+         VecAdd.vcxproj -> E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\VecAdd\Debug\VecAdd.exe
+     1>Done Building Project "E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\VecAdd\VecAdd.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.76

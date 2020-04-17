@@ -16,6 +16,9 @@ ID3D11DepthStencilState* RenderStates::MarkMirrorDSS     = 0;
 ID3D11DepthStencilState* RenderStates::DrawReflectionDSS = 0;
 ID3D11DepthStencilState* RenderStates::NoDoubleBlendDSS  = 0;
 
+ID3D11DepthStencilState* RenderStates::WallDSS	= 0;
+ID3D11DepthStencilState* RenderStates::SkullDSS = 0;
+
 void RenderStates::InitAll(ID3D11Device* device)
 {
 	//
@@ -98,12 +101,12 @@ void RenderStates::InitAll(ID3D11Device* device)
 	noRenderTargetWritesDesc.IndependentBlendEnable = false;
 
 	noRenderTargetWritesDesc.RenderTarget[0].BlendEnable    = false;
-	noRenderTargetWritesDesc.RenderTarget[0].SrcBlend       = D3D11_BLEND_ONE;
-	noRenderTargetWritesDesc.RenderTarget[0].DestBlend      = D3D11_BLEND_ZERO;
-	noRenderTargetWritesDesc.RenderTarget[0].BlendOp        = D3D11_BLEND_OP_ADD;
-	noRenderTargetWritesDesc.RenderTarget[0].SrcBlendAlpha  = D3D11_BLEND_ONE;
+	noRenderTargetWritesDesc.RenderTarget[0].SrcBlend = D3D11_BLEND_ONE;
+	noRenderTargetWritesDesc.RenderTarget[0].DestBlend = D3D11_BLEND_ZERO;
+	noRenderTargetWritesDesc.RenderTarget[0].BlendOp = D3D11_BLEND_OP_ADD;
+	noRenderTargetWritesDesc.RenderTarget[0].SrcBlendAlpha = D3D11_BLEND_ONE;
 	noRenderTargetWritesDesc.RenderTarget[0].DestBlendAlpha = D3D11_BLEND_ZERO;
-	noRenderTargetWritesDesc.RenderTarget[0].BlendOpAlpha   = D3D11_BLEND_OP_ADD;
+	noRenderTargetWritesDesc.RenderTarget[0].BlendOpAlpha = D3D11_BLEND_OP_ADD;
 	noRenderTargetWritesDesc.RenderTarget[0].RenderTargetWriteMask = 0;
 
 	HR(device->CreateBlendState(&noRenderTargetWritesDesc, &NoRenderTargetWritesBS));
@@ -182,6 +185,31 @@ void RenderStates::InitAll(ID3D11Device* device)
 	noDoubleBlendDesc.BackFace.StencilFunc   = D3D11_COMPARISON_EQUAL;
 
 	HR(device->CreateDepthStencilState(&noDoubleBlendDesc, &NoDoubleBlendDSS));
+
+
+	//
+	// WallDSS
+	//
+
+	D3D11_DEPTH_STENCIL_DESC wallDesc;
+	wallDesc.DepthEnable = false;
+	wallDesc.DepthWriteMask = D3D11_DEPTH_WRITE_MASK_ALL;
+	wallDesc.DepthFunc = D3D11_COMPARISON_LESS;
+	wallDesc.StencilEnable = false;
+
+	HR(device->CreateDepthStencilState(&wallDesc, &WallDSS));
+
+	//
+	// SkullDSS
+	//
+
+	D3D11_DEPTH_STENCIL_DESC skullDesc;
+	skullDesc.DepthEnable = true;
+	skullDesc.DepthWriteMask = D3D11_DEPTH_WRITE_MASK_ALL;
+	skullDesc.DepthFunc = D3D11_COMPARISON_LESS;
+	skullDesc.StencilEnable = false;
+
+	HR(device->CreateDepthStencilState(&skullDesc, &SkullDSS));
 }
 
 void RenderStates::DestroyAll()
@@ -197,4 +225,7 @@ void RenderStates::DestroyAll()
 	ReleaseCOM(MarkMirrorDSS);
 	ReleaseCOM(DrawReflectionDSS);
 	ReleaseCOM(NoDoubleBlendDSS);
+
+	ReleaseCOM(WallDSS);
+	ReleaseCOM(SkullDSS);
 }

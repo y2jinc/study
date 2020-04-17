@@ -203,6 +203,16 @@ void Camera::RotateY(float angle)
 	XMStoreFloat3(&mLook, XMVector3TransformNormal(XMLoadFloat3(&mLook), R));
 }
 
+void Camera::Roll(float angle)
+{
+	// Rotate up and right vector about the look vector.
+
+	XMMATRIX L = XMMatrixRotationAxis(XMLoadFloat3(&mLook), angle);
+
+	XMStoreFloat3(&mUp, XMVector3TransformNormal(XMLoadFloat3(&mUp), L));
+	XMStoreFloat3(&mRight, XMVector3TransformNormal(XMLoadFloat3(&mRight), L));
+}
+
 void Camera::UpdateViewMatrix()
 {
 	XMVECTOR R = XMLoadFloat3(&mRight);

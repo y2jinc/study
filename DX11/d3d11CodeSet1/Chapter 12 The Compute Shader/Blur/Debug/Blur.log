@@ -1,0 +1,21 @@
+﻿Build started 2020-02-28 오전 11:32:28.
+     1>Project "E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\Blur\Blur.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\Blur\Debug\Blur.exe" /INCREMENTAL /NOLOGO d3d11.lib d3dx11d.lib D3DCompiler.lib Effects11d.lib dxerr.lib dxgi.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\Blur\Debug\Blur.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\Blur\Debug\Blur.lib" /MACHINE:X86 Debug\d3dApp.obj
+         Debug\d3dUtil.obj
+         Debug\GameTimer.obj
+         Debug\GeometryGenerator.obj
+         Debug\LightHelper.obj
+         Debug\MathHelper.obj
+         Debug\Waves.obj
+         Debug\Blur.obj
+         Debug\BlurFilter.obj
+         Debug\Effects.obj
+         Debug\RenderStates.obj
+         Debug\Vertex.obj
+         Blur.vcxproj -> E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\Blur\Debug\Blur.exe
+     1>Done Building Project "E:\git_repository\study\DX11\d3d11CodeSet1\Chapter 12 The Compute Shader\Blur\Blur.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.31
