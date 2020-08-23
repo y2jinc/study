@@ -1,7 +1,13 @@
 #include <windows.h> // for FLOAT definition
-#include <xnamath.h>
+#define _XM_NO_INTRINSICS_
+
+#include <DirectXMath.h>
+#include <DirectXPackedVector.h>
 #include <iostream>
+
 using namespace std;
+using namespace DirectX;
+using namespace DirectX::PackedVector;
 
 // Overload the  "<<" operators so that we can use cout to 
 // output XMVECTOR and XMMATRIX objects.
